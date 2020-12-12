@@ -17,12 +17,13 @@
   },
   "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme",
   "dependencies": {
-    "rust-app": "file:packages/rust-app",
-    "@website/skeleton": "file:packages/skeleton"
+    "@website/skeleton": "file:packages/skeleton",
+    "rust-app": "file:packages/rust-app"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.0",
     "hello-wasm-pack": "^0.1.0",
+    "typescript": "^4.1.3",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"

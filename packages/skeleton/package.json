@@ -1,15 +1,10 @@
 {
   "name": "@website/skeleton",
-  "collaborators": [
-    "theMPatel <bicelot3@gmail.com>"
-  ],
   "version": "0.1.0",
   "files": [
-    "app_bg.wasm",
-    "app.js",
-    "app.d.ts"
+    "src/index.ts",
+    "src/bootstrap.ts"
   ],
-  "module": "app.js",
-  "types": "app.d.ts",
+  "types": "index.d.ts",
   "sideEffects": false
 }
