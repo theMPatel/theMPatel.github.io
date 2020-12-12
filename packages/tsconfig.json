@@ -1,9 +1,6 @@
 {
-  "extends": "tsconfig.base.json",
+  "extends": "./tsconfig.base.json",
   "references": [
-    {
-      "path": "rust-app"
-    },
     {
       "path": "website"
     }

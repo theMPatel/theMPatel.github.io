@@ -1,3 +1,7 @@
-import * as rustapp from 'rust-app';
+const rustapp = import('rust-app');
 
-rustapp.greet();
+export function doGreet(): void {
+    rustapp
+        .then(m => m.greet())
+        .catch(console.error);
+}

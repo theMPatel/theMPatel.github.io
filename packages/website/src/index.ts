@@ -1,2 +1,3 @@
-import("./bootstrap")
-    .catch(e => console.error("Error importing `index.js`: ", e));
+import * as funcs from "./bootstrap";
+
+funcs.doGreet();
