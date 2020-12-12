@@ -4,7 +4,9 @@
   "description": "my great website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   },
   "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme",
   "dependencies": {
-    "@website/skeleton": "file:packages/skeleton",
+    "@website/website": "file:packages/website",
     "rust-app": "file:packages/rust-app"
   },
   "devDependencies": {

@@ -2,13 +2,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./bootstrap.js",
+    entry: "./packages/website/dist/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bootstrap.js",
+        filename: "index.js",
     },
     mode: "development",
-    plugins: [
-        // new CopyWebpackPlugin(['index.html'])
-    ],
 };
