@@ -1,0 +1,5 @@
+{
+  "name": "rust-app",
+  "version": "0.1.0",
+  "types": "dist/rust_app.d.ts"
+}
