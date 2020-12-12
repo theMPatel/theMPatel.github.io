@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/theMPatel/theMPatel.github.io/issues"
   },
-  "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme"
+  "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme",
+  "dependencies": {
+    "@website/app": "file:packages/app"
+  }
 }

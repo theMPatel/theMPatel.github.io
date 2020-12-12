@@ -2,7 +2,7 @@
 all: build-rust
 
 build-rust:
-	cd ${RUST_ROOT} && wasm-pack build
+	wasm-pack build ${RUST_ROOT} --out-dir ${PACKAGE_ROOT}/app
 
 deploy:
 	${PROJECT_ROOT}/tools/deploy.sh
