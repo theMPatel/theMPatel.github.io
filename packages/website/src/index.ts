@@ -1,3 +1,3 @@
-import * as funcs from "./bootstrap";
+import { doGreet } from "./bootstrap";
 
-funcs.doGreet();
+doGreet();
