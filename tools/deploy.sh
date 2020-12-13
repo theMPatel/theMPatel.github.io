@@ -1,3 +1,6 @@
 #!/bin/bash
 
-git subtree push --prefix ${SITE_ROOT} origin gh-pages
+BRANCH="gh-pages"
+git branch -D ${BRANCH}
+git subtree split --prefix dist -b ${BRANCH}
+git push --force origin ${BRANCH}
