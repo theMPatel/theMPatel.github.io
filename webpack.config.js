@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./packages/website/src/index.ts",
+    entry: "./packages/website/dist/index.js",
     module: {
         rules: [
             {
