@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme",
   "dependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.6",
     "@website/website": "file:packages/website",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.5.0",
