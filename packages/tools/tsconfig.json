@@ -6,12 +6,6 @@
     "tsBuildInfoFile": "./.tsbuildinfo"
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "references": [
-    {
-      "path": "../tools"
-    }
+    "src/*.ts"
   ]
 }

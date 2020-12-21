@@ -4,7 +4,9 @@
   "description": "my great website",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --build -v packages && npx webpack --config webpack.config.js"
+    "build:dev": "tsc --build -v packages && npx webpack --config webpack.config.js --mode=development",
+    "build:prod": "tsc --build -v packages && npx webpack --config webpack.config.js --mode=production",
+    "build:scss": "tsm ./packages/**/*.module.scss --nameFormat none --exportType default"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,18 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
+    "@website/components": "file:packages/components",
+    "@website/tools": "file:packages/tools",
     "@website/website": "file:packages/website",
+    "cpx": "^1.5.0",
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "typed-scss-modules": "^3.4.0"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.5.0",

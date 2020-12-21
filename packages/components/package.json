@@ -1,5 +1,10 @@
 {
   "name": "@website/components",
   "version": "0.1.0",
-  "types": "dist/index.d.ts"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "prebuild": "cpx 'src/**/*.{module.scss,d.ts,svg}' dist --update"
+  }
 }

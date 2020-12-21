@@ -8,6 +8,7 @@
     "composite": true,
     "incremental": true,
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "lib": ["es2017", "dom"]
   }
 }
