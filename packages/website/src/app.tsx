@@ -8,13 +8,21 @@ import {
 
 export const App: React.FC = () => {
   return (
-    <HashRouter basename="/">
-      <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/about" component={About} />
-        <Redirect to="/home"/>
-      </Switch>
-    </HashRouter>
+    <div
+      style={{
+        backgroundColor: "#282c34",
+        width: "100%",
+        height: "100%"
+      }}
+    >
+      <HashRouter basename="/">
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Redirect to="/home"/>
+        </Switch>
+      </HashRouter>
+    </div>
   );
 }
 
