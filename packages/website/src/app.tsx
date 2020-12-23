@@ -5,10 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import {
-  Box,
-  theme as primaryTheme
-} from '@primer/components';
+import { Box } from '@primer/components';
 
 import { ThemeProvider } from 'styled-components';
 import { AppHeader } from "./appheader";
@@ -17,10 +14,11 @@ import { About } from "./about";
 import { Locations } from "./locations";
 import { Thoughts } from "./thoughts";
 import { AppFooter } from "./appfooter";
+import { theme } from "./theme";
 
 export const App: React.FC = () => {
   return (
-    <ThemeProvider theme={primaryTheme}>
+    <ThemeProvider theme={theme}>
       <BaseApp />
     </ThemeProvider>
   )

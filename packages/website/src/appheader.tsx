@@ -7,7 +7,7 @@ export const AppHeader: React.FC = () => {
   return (
     <Header>
       <Header.Item full>
-        <Header.Link href={toHashPath(Locations.HOME)}>
+        <Header.Link href={toHashPath(Locations.ABOUT)}>
           <Avatar
             alt={"@theMPatel"}
             src={"https://avatars0.githubusercontent.com/u/32933108?s=60&v=4"}

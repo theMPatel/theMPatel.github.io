@@ -5,8 +5,8 @@ export const AppFooter: React.FC = () => {
   return (
     <Fixed bottom={0}>
       <Text>
-        This is a test
+        This is a footer
       </Text>
     </Fixed>
-  )
+  );
 }
