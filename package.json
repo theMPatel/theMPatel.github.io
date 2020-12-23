@@ -21,10 +21,12 @@
   "dependencies": {
     "@primer/components": "22.0.3",
     "@primer/octicons-react": "10.1.0",
+    "@primer/primitives": "3.0.0",
     "@website/website": "file:packages/website",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-router-dom": "5.2.0"
+    "react-router-dom": "5.2.0",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "css-loader": "5.0.1",

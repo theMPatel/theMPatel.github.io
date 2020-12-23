@@ -6,8 +6,14 @@ import {
   Switch,
 } from 'react-router-dom';
 import {
-  Box
+  Box,
+  theme as primaryTheme
 } from '@primer/components';
+import {
+  theme as primitiveTheme
+} from '@primer/primitives';
+
+import { ThemeProvider } from 'styled-components';
 import { AppHeader } from "./appheader";
 import { Home } from "./home";
 import { About } from "./about";
@@ -16,15 +22,28 @@ import { Thoughts } from "./thoughts";
 
 export const App: React.FC = () => {
   return (
+    <ThemeProvider theme={{
+      ...primaryTheme,
+      ...primaryTheme
+    }}>
+      <BaseApp />
+    </ThemeProvider>
+  )
+}
+
+const BaseApp: React.FC = () => {
+  return (
     <Box minHeight={"100vh"}>
-      <AppHeader />
       <HashRouter basename="/">
-        <Switch>
-          <Route path={Locations.HOME} component={Home} />
-          <Route path={Locations.ABOUT} component={About} />
-          <Route path={Locations.THOUGHTS} component={Thoughts} />
-          <Redirect to={Locations.HOME}/>
-        </Switch>
+        <AppHeader />
+        <Box>
+          <Switch>
+            <Route path={Locations.HOME} component={Home} />
+            <Route path={Locations.ABOUT} component={About} />
+            <Route path={Locations.THOUGHTS} component={Thoughts} />
+            <Redirect to={Locations.HOME}/>
+          </Switch>
+        </Box>
       </HashRouter>
     </Box>
   );
