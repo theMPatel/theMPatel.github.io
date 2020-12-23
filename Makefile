@@ -1,5 +1,11 @@
 SERVER := $(GOPATH)/bin/server
 
+dev:
+	npm run build:dev
+
+prod:
+	npm run build:prod
+
 serve: $(SERVER)
 	server -serve ${SITE_ROOT}&
 

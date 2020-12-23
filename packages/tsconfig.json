@@ -6,12 +6,6 @@
   "references": [
     {
       "path": "website"
-    },
-    {
-      "path": "components"
-    },
-    {
-      "path": "tools"
     }
   ]
 }

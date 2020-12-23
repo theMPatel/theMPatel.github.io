@@ -19,29 +19,23 @@
   },
   "homepage": "https://github.com/theMPatel/theMPatel.github.io#readme",
   "dependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-router-dom": "^5.1.6",
-    "@website/components": "file:packages/components",
-    "@website/tools": "file:packages/tools",
+    "@primer/components": "22.0.3",
+    "@primer/octicons-react": "10.1.0",
     "@website/website": "file:packages/website",
-    "cpx": "^1.5.0",
-    "css-loader": "^5.0.1",
-    "mini-css-extract-plugin": "^1.3.3",
-    "node-sass": "^5.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "style-loader": "^2.0.0",
-    "typed-scss-modules": "^3.4.0"
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-router-dom": "5.2.0"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^4.5.0",
-    "sass": "^1.30.0",
-    "sass-loader": "^10.1.0",
-    "ts-loader": "^8.0.12",
-    "typescript": "^4.1.3",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.2.0"
+    "css-loader": "5.0.1",
+    "html-webpack-plugin": "4.5.0",
+    "mini-css-extract-plugin": "1.3.3",
+    "node-sass": "5.0.0",
+    "sass": "1.30.0",
+    "sass-loader": "10.1.0",
+    "style-loader": "2.0.0",
+    "typescript": "3.8.3",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.2.0"
   }
 }
