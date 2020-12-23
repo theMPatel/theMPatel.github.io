@@ -1,12 +1,17 @@
 import React from "react";
-import { Box, Text } from "@primer/components";
+import { Fixed, Text } from "@primer/components";
 
 export const Home: React.FC = () => {
   return (
-    <Box>
-      <Text fontWeight="bold" fontFamily="monospace">
-        this is bold some text
+    <Fixed top="50%" left="40%">
+      <Text
+        fontWeight="bold"
+        fontFamily="sans-serif"
+        color="gray.0"
+        fontSize={32}
+      >
+        Coming Soon!
       </Text>
-    </Box>
+    </Fixed>
   );
 }
