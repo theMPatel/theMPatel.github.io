@@ -3,7 +3,7 @@ import { Box, Text } from "@primer/components";
 
 export const Home: React.FC = () => {
   return (
-    <Box bg="gray.9">
+    <Box>
       <Text fontWeight="bold" fontFamily="monospace">
         this is bold some text
       </Text>

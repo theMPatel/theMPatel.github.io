@@ -9,9 +9,6 @@ import {
   Box,
   theme as primaryTheme
 } from '@primer/components';
-import {
-  theme as primitiveTheme
-} from '@primer/primitives';
 
 import { ThemeProvider } from 'styled-components';
 import { AppHeader } from "./appheader";
@@ -19,13 +16,11 @@ import { Home } from "./home";
 import { About } from "./about";
 import { Locations } from "./locations";
 import { Thoughts } from "./thoughts";
+import { AppFooter } from "./appfooter";
 
 export const App: React.FC = () => {
   return (
-    <ThemeProvider theme={{
-      ...primaryTheme,
-      ...primaryTheme
-    }}>
+    <ThemeProvider theme={primaryTheme}>
       <BaseApp />
     </ThemeProvider>
   )
@@ -33,16 +28,17 @@ export const App: React.FC = () => {
 
 const BaseApp: React.FC = () => {
   return (
-    <Box minHeight={"100vh"}>
+    <Box>
       <HashRouter basename="/">
         <AppHeader />
-        <Box>
+        <Box minHeight={"100vh"} bg="black">
           <Switch>
             <Route path={Locations.HOME} component={Home} />
             <Route path={Locations.ABOUT} component={About} />
             <Route path={Locations.THOUGHTS} component={Thoughts} />
             <Redirect to={Locations.HOME}/>
           </Switch>
+          <AppFooter />
         </Box>
       </HashRouter>
     </Box>
