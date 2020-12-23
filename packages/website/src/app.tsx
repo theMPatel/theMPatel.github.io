@@ -6,53 +6,24 @@ import {
   Switch,
 } from 'react-router-dom';
 import {
-  Box,
-  Header,
-  Text
+  Box
 } from '@primer/components';
-
-const AppHeader: React.FC = () => {
-  return (
-    <Header>
-      <Header.Link href="/home">
-        <Text fontFamily="monospace">
-          Home
-        </Text>
-      </Header.Link>
-      <Header.Link href="/about">
-        <Text fontFamily="monospace">
-          About
-        </Text>
-      </Header.Link>
-    </Header>
-  );
-}
-
-const Home: React.FC = () => {
-  return (
-    <Text fontWeight="bold" fontFamily="monospace">
-      this is bold some text
-    </Text>
-  );
-}
-
-const About: React.FC = () => {
-  return (
-    <Text fontFamily="monospace">
-      This is some text that is supposed to be about me
-    </Text>
-  )
-}
+import { AppHeader } from "./appheader";
+import { Home } from "./home";
+import { About } from "./about";
+import { Locations } from "./locations";
+import { Thoughts } from "./thoughts";
 
 export const App: React.FC = () => {
   return (
-    <Box>
+    <Box minHeight={"100vh"}>
       <AppHeader />
       <HashRouter basename="/">
         <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Redirect to="/home"/>
+          <Route path={Locations.HOME} component={Home} />
+          <Route path={Locations.ABOUT} component={About} />
+          <Route path={Locations.THOUGHTS} component={Thoughts} />
+          <Redirect to={Locations.HOME}/>
         </Switch>
       </HashRouter>
     </Box>
