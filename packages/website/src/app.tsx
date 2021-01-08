@@ -26,10 +26,10 @@ export const App: React.FC = () => {
 
 const BaseApp: React.FC = () => {
   return (
-    <Box>
+    <Box minHeight={"100vh"} bg="black">
       <HashRouter basename="/">
         <AppHeader />
-        <Box minHeight={"100vh"} bg="black">
+        <Box>
           <Switch>
             <Route path={Locations.HOME} component={Home} />
             <Route path={Locations.ABOUT} component={About} />
